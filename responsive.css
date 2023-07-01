@@ -1,0 +1,154 @@
+
+/* APPLYING MEDIA QUERIES */
+/*NAV_BAR*/
+@media (max-width: 768px) {
+    .menu {
+      display: none;
+      position: absolute;
+      background-color: rgb(159, 10, 127);
+      right: 0;
+      left: 0;
+      text-align: center;
+      padding: 16px 0;
+      margin-top: 21px;
+    }
+  
+    .menu li:hover {
+      display: inline-block;
+      background-color: rgb(194, 9, 154);
+      transition: 0.3s ease;
+    }
+  
+    .menu li+li {
+      margin-top: 12px;
+    }
+  
+    input[type=checkbox]:checked~.menu {
+      display: block;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .dropdown {
+      left: 10px;
+      top: 30px;
+      transform: translateX(35%); 
+    }
+  
+    .dropdown li:hover {
+      background-color:rgb(194, 9, 154);
+    }
+    
+  }
+  @media screen and (max-width:800px) {
+    .headings{
+      font-size: 2.5rem;
+    }
+    
+.home .headings{
+  color: white;
+  font-size: 2rem;
+}
+    #picture{
+      flex-direction: column;
+      align-items: center;
+    }
+    #picture img{
+      width: 375px;
+      height: 300px;
+    }
+    .content h2{
+      text-align: center;
+      padding: 10px;
+    }
+    .input{
+      width: 60%;
+
+    }
+    #msg{
+      width: 55%;
+    }
+    #send{
+      width: 20%;
+    }
+  }
+  @media screen and (max-width:530px) {
+    /* home */
+    .headings{
+      font-size: 1.7rem;
+    }
+    .home .headings{
+      color: white;
+      font-size: 1.5rem;
+    }
+    #picture img{
+      width: 300px;
+      height: 175px;
+    }
+    .content h2{
+      font-size: 1.5rem;
+    }
+    .input{
+      width: 80%;
+    }
+    #msg{
+      width: 70%;
+    }
+    #send{
+      width: 20%;
+    }
+    .connect h2{
+      font-size: 1rem;
+    }
+    .links img{
+      height: 20px;
+    }
+    .copyeright{
+      text-align: justify;
+    }
+  }
+  @media screen and (max-aspect-ratio: 4/3) {
+    .home ::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: url('images/ipad.jpg') no-repeat center center/cover;
+      height:110vh;
+      width: 100%;
+      z-index: -1;
+      opacity: .8;
+    
+    }
+    
+    .memo{
+      padding-right: 0;
+    }
+    .home{
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+  @media screen and (max-aspect-ratio: 2/3) {
+    .home ::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: url('images/mobile.jpg') no-repeat center center/cover;
+      height:110vh;
+      width: 100%;
+      z-index: -1;
+      opacity: .8;
+    
+    }
+    .memo{
+      padding-right: 0;
+    }
+    .home{
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
