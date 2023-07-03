@@ -213,7 +213,7 @@
     animation: fillBars 2.5s 1 ; 
   }
   
-  .skill-per::before {
+  .skill-per::after {
     content: attr(per);
     position: absolute;
     padding: 4px 6px;
@@ -227,7 +227,7 @@
     transform: translateX(50%);
   }
   
-  .skill-per::after {
+  .skill-per::before {
     content: "";
     position: absolute;
     width: 10px;
